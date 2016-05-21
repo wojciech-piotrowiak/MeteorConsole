@@ -29,6 +29,18 @@ Template.hello.events({
 			if(last!=undefined)
 			event.target.value=last;
 		}
+		if(event.which== 9) {
+			if(event.target.value=='l'){
+        event.target.value='ls';
+			}
+			if(event.target.value=='p'){
+        event.target.value='pwd';
+			}
+
+			if(event.preventDefault) {
+                event.preventDefault();
+      }
+    }
 		if(event.which==13)
 		{
 			counter=0;
@@ -40,7 +52,7 @@ Template.hello.events({
 			event.target.value="";
 			});
 		}
-	}
+
 }
 
   });
