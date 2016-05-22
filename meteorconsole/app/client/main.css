@@ -1,9 +1,17 @@
 
-.console {
+#console {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+            width: 100%;
+            height: 60%;
+            margin-bottom: 0;
 }
  li {
    list-style: none;
+   margin-top: 0;
  }
+
+.url{
+  width: 90%;
+}
